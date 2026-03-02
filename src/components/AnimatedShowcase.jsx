@@ -15,7 +15,7 @@ const AnimatedShowcase = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImg((prev) => (prev + 1) % backgroundImages.length);
-    }, 4000);
+    }, 1500);
     return () => clearInterval(timer);
   }, []);
 

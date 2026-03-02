@@ -20,7 +20,7 @@ const Gallery = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === slides.length - 1 ? 0 : prevIndex + 1
       );
-    }, 4000); // 4000 milliseconds = 4 seconds
+    }, 2000); // 4000 milliseconds = 4 seconds
 
     return () => clearInterval(timer);
   }, [slides.length]);
